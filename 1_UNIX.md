@@ -59,7 +59,7 @@ There are four things that you should note here:
 3. The output of the `ls` command lists five things. In this case, they are all directories, but they could also be files. We'll learn how to tell them apart later on. 
 4. After the `ls` command finishes it produces a new command prompt, ready for you to type your next command.
 
-#### Task U2.1
+#### Task 1
 Go to your home directory and use the `ls` command to display the contents.
 
 ---
@@ -155,7 +155,7 @@ or...
 
 They both achieve the same thing, but the 2nd example requires that you know about the full _path_ from the root level of the computer to your directory of interest (the 'path' is an important concept in Unix). Sometimes it is quicker to change directories using the relative path, and other times it will be quicker to use the absolute path.
 
-#### Task U8.1
+#### Task 2
 Try moving from a directory to another directory at that same level, using each method (absolute and relative paths).
 
 ---
@@ -164,7 +164,7 @@ Try moving from a directory to another directory at that same level, using each 
 
 Remember that the command prompt shows you the name of the directory that you are currently in, and that when you are in your home directory it shows you a tilde character (~) instead? This is because Unix uses the tilde character as a short-hand way of specifying a home directory.
 
-#### Task U9.1
+#### Task 3
 See what happens when you try the following commands (use the `pwd` command after each one to confirm the results):
 
 	$ cd / 
@@ -203,7 +203,7 @@ The `ls` command (like most Unix commands) has a set of options that can be adde
 
 For each file or directory we now see more information (including file ownership and modification times). The 'd' at the start of each line indicates that these are directories
 
-#### Task U10.1
+#### Task 4
 There are many, many different options for the ls command. Try out the following (against any directory of your choice) to see how the output changes.
 
 	ls -l 
@@ -251,7 +251,7 @@ In the last example we created the two temp directories in two separate steps. I
 
 	$ mkdir -p Temp1/Temp2
 
-#### Task U12.1
+#### Task 5
 Practice creating some directories and navigating between them using the `cd` command. Try changing
 directories using both the _absolute_ as well as the _relative_ path.
 
@@ -266,7 +266,7 @@ We now have a few (empty) directories that we should remove. To do this use the 
 
 Why the error on the `rmdir` command? If a directory contains files or other directories, you need to use `rm -r` instead. Try it!
 
-#### Task U13.1
+#### Task 6
 Use `cd` to navigate to your Downloads directory. Remove an unwanted file.
 
 ---
@@ -283,7 +283,7 @@ with 'tou'. If pressing tab doesn't do anything, then you have not have typed en
 pressing tab _twice_ will show you all possible completions. This trick can save you a LOT of typing...if you don't use
 tab-completion then you must be a masochist.
 
-#### Task U14.1
+#### Task 7
 Navigate to your home directory, and again make a "unix" directory. Then use the `cd` command to change to the `/Users/yourname/Desktop/unix` directory. Use tab completion for each directory name.
 
 Another great time-saver is that Unix stores a list of all the commands that you have typed in each login session. You can access this list by using the `history` command or more simply by using the up and down arrows to access anything from your history. So if you type a long command but make a mistake, press the up arrow and then you can use the left and right arrows to move the cursor in order to make a change.
@@ -323,7 +323,7 @@ target location. If we had wanted to we could have moved both files in one go by
 
 The asterisk `*` acts as a wild-card character, essentially meaning 'match anything'. The second example works because there are no other files or directories in the directory that end with the letters 't' (if there was, then they would be copied too).  Likewise, the third example works because only those two files contain the letters 'ea' in their names. Using wild-card characters can save you a lot of typing.
 
-#### Task U16.1
+#### Task 8
 Use `touch` to create three files called 'fat', 'fit', and 'feet'inside the Temp directory. I.e.
 
 	$ cd Temp
@@ -366,7 +366,7 @@ It is important to understand that as long as you have specified a 'source' and 
 
 This step moves the Temp2 directory inside the Temp directory.
 
-#### Task U18.1
+#### Task 9
 Create another Temp directory (Temp3) and then change directory to your home directory (/Users/yourname or simply `~`). **Without** changing directory, move the Temp3 directory to inside the /Users/yourname/Desktop/Temp directory.
 
 ---
@@ -391,7 +391,7 @@ In the first example, we change directories just to run the ls command, and then
 
 ## U20: To slash or not to slash?
 
-#### Task U20.1
+#### Task 10
 Run the command to return to your home directory.
 
 From your home directory, run the following commands:
@@ -429,7 +429,7 @@ Let me repeat that last part again. **It is possible to delete EVERY file you ha
 
 We could have simplified this step by using a wild-card (e.g. `rm -i *.txt`).
 
-#### Task U21.1
+#### Task 11
 Remove the remaining file from the "/Users/yourname/Desktop/unix" directory. Now navigate to either your Desktop or Downloads folder and remove any files you don't need. Use a wild-card when appropriate. For example, I frequently have screenshots pile up on my Desktop, which I can quickly remove with `rm Scree*`.
 
 ---
@@ -484,7 +484,7 @@ The `cp` command also allows us (with the use of a command-line option) to copy 
 	Storage2: 
 	file1	file2	file3
 
-#### Task U23.1
+#### Task 12
 The `-R` option means "copy recursively". Many other Unix commands also have a similar option. See what happens if you don't include the `-R` option. We've finished with all of these temporary files now. Make sure you remove the unix directory and its contents (remember to always use `rm -i`).
 
 ---
@@ -514,7 +514,7 @@ Now we can look at the contents:
 
 When you are using less, you can bring up a page of help commands by pressing `h`, scroll forward a page by pressing `space`, or go forward or backwards one line at a time by pressing `j` or `k`. To exit less, press `q` (for quit). The `less` program also does about a million other useful things (including text searching).
 
-#### Task U25.1
+#### Task 13
 Make a new directory called Data in your Desktop. Move the At_proteins.fasta file to the Data directory. Show that it is there using the `ls` command.
 
 ---
@@ -537,7 +537,7 @@ Hopefully, you'll agree that the second example makes things a little clearer. Y
 
 If you have trouble remembering what some of these very short Unix commands do, then aliases allow you to use human-readable alternatives. I.e. you could make a "copy" alias for the cp command or even make "list_files_sorted_by_date" perform the `ls -lt` command. Note that aliases do not replace the original command. It can be dangerous to use the name of an existing command as an alias for a different command. I.e. you could make an `rm` alias that put files to a "trash" directory by using the `mv` command. This might work for you, but what if you start working on someone else's machine who doesn't have that alias? Or what if someone else starts working on your machine?
 
-#### Task U26.1
+#### Task 14
 Create an alias such that typing `rm` will always invoke `rm -i`. Try running the alias command on its own to see what happens. Now open a new terminal window (or a new tab) and try running your `ls` alias. What happens?
 
 ---
@@ -555,7 +555,7 @@ You should see the following appear in your terminal:
 
 The bottom of the nano window shows you a list of simple commands that are all accessible by typing "Control" plus a letter. E.g. Control + X exits the program. "Control" is often represented as \^, or in this case \^X.
 
-#### Task U27.1
+#### Task 15
 Type the following text in the editor and then save it (\^O). Nano will ask if you want to "save the modified buffer" and then ask if you want to keep the same name. Then exit nano (\^X) and use `less` to confirm that the profile file contains the text you added.
 
  	# some useful command line short-cuts 
@@ -564,7 +564,7 @@ Type the following text in the editor and then save it (\^O). Nano will ask if y
 
 Now you have successfully created a configuration file (called "profile") which contains two aliases. The first line that starts with a hash (#) is a comment, these are just notes that you can add to explain what the other lines are doing. But how do you get Unix to recognize the contents of this file? The `source` command tells Unix to read the contents of a file and treat it as a series of Unix commands (but it will ignore any comments).
 
-#### Task U27.2
+#### Task 16
 Open a new terminal window or tab (to ensure that any aliases will not work) and then type the following (make sure you first change to the correct directory):
 
 	$ source profile
@@ -577,12 +577,12 @@ Now try the `ls` command to see if the output looks different. Next, use `touch`
 
 In addition to adding aliases, profile files in Unix are very useful for many other reasons. Profile files are hidden files (or "dot" files). If a filename starts with a dot, Unix will treat it as a hidden file. To see it, you  can use `ls -a` which lists all hidden files (there may be several more files that appear) in addition to the other files.
 
-#### Task U28.1
+#### Task 17
 Navigate to your home directory. Use the appropriate command to list all files including hidden files. 
 
 If any files appear that has "profile" in the name, use the `less` command to look at the contents. Any such file in your _home_ directory will be automatically read every time you open a new terminal. If you want to use the profile you created above, you have to remember to use the command `source profile` whenever you open a new terminal session. If you're in a different directory when you run the command, remember to alter the path accordingly.
 
-#### Task U28.2
+#### Task 18
 Open a new Terminal session and navigate to your Downloads folder (or any other folder besides your home directory). 
 
 Use the `ls` command to see the contents of the folder.
@@ -600,14 +600,14 @@ Unix can also be used as a programming language just like Python. Depending on w
 
 So how do you make a Unix script (which are commonly called "shell scripts")? At the simplest level, we just write one or more  Unix commands to a file and then treat that file as if it was any other Unix command or program.
 
-#### Task U29.1
+#### Task 19
 Make a new directory in Desktop named "Code". Witin the Code directory, create a nano file named "hello.sh" containing the following two lines: 
 
 	# my first Unix shell script 
 	echo "Hello World"
 
 
-#### Task U29.2
+#### Task 20
 Type `bash hello.sh` and see what happens. It likely won't work! Use `ls -l` and look closely at the information in the first column. You'll see some r's and w's, but no x's (explained below). 
 
 You need to run a command that gives the file permission to execute. Do this by typing:
@@ -619,7 +619,7 @@ Type `ls -l` and look again at the first column. What changed?
 Now run `bash hello.sh` again. What do you see?
 
 
-#### Task U29.3
+#### Task 21
 Now place a "dot-slash" in front of the name of the file you want to execute, like this:
 
 	./hello.sh
@@ -633,7 +633,7 @@ The chmod command can also modify read and write permissions for files, and chan
 
 Time to make some Unix shell scripts that might actually be useful.
 
-#### Task U30.1
+#### Task 22
 Look around at some of the files in your messiest folder, which is likely either Downloads or Desktop. Identify some file types you'd like to organize into folders. For example, you might want to move all .txt files into a "Text" folder, and all .mp3 files into a "Music folder". Put the appropriate information into a shell script (using `nano`) and save it as cleanup.sh. Might look like this:
 
 	#!/bin/bash
@@ -641,7 +641,7 @@ Look around at some of the files in your messiest folder, which is likely either
 	mv *.jpg Pictures 
 	mv *.mp3 Music 
 	
-#### Task U30.2
+#### Task 23
 First use `ls` to show the files before they are organized. Then give permission to `cleanup.sh` and run it. Use `ls` again to show the newly organized files.
 
 Did you notice the `#!/bin/bash` line in this script? There are several different types of shells in Unix, and this line makes it clearer that a) that this is actually a file that can be treated as a program and b) that it will be a bash script (bash is a type of Unix shell). As a general rule, all types of scriptable programming languages should have a similar line as the first line in the program.
