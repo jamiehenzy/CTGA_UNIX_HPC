@@ -25,7 +25,7 @@ Navigate to our course's folders and use the `ls` command to explore the file st
 `cd /courses/BIOL3411.202540`
 
 
-#### Task U32.1
+#### Task 1
 Use a command to show the names of the files in the "/courses/BIOL3411.202540/data" folder. You'll need to access some of these files in this Tutorial. 
 
 **Whenever you're asked to perform an exercises with a file from any of these folders, COPY it to your own directory first.**
@@ -128,7 +128,7 @@ A concept that is supported by many Unix programs and also by most programming l
 
 The `^` character is a special character that tells `grep` to only match a pattern if it occurs at the start of a line. Similarly, the `$` tells `grep` to match patterns that occur at the end of the line.
 
-#### Task U36.1
+#### Task 2
 The `.` and `*` characters are also special characters that form part of the regular expression. Try to understand how the following patterns all differ. Try using each of these these patterns with `grep` against any one of the sequence files. Can you predict which of the five patterns will generate the most matches?
 
 	ACGT 
@@ -153,7 +153,7 @@ Rather than showing you the lines that match a certain pattern, `grep` can also 
 	$ grep -c i2 intron_IME_data.fasta 
 	9785
 
-#### Task U37.1
+#### Task 3
 Count how many times each of the first three patterns from **Task U36.1** occurs in all of the sequence files (specifying `*.fasta` will allow you to specify all sequence files).
 
 ---
@@ -162,7 +162,7 @@ Count how many times each of the first three patterns from **Task U36.1** occurs
 
 You have seen already how you can use `less` to view files, and also to search for patterns. If you are viewing a file with `less`, you can type a forward-slash `/` character, and this allows you to then specify a pattern and it will then search for (and highlight) all matches to that pattern. Technically it is searching forward from whatever point you are at in the file. You can also type a question-mark `?` and `less` will allow you to search backwards. The real bonus is that the patterns you specify can be regular expressions.
 
-#### Task U38.1
+#### Task 4
 Try viewing a DNA sequence file (chr1.fasta or the introns file) with `less` and then searching for a pattern such as `ATCG.*TAG$`. This should make it easier to see exactly where your regular expression pattern matches. After typing a forward-slash (or a question-mark), you can press the up and down arrows to select previous searches.
 
 ---
@@ -184,7 +184,7 @@ another range of characters. This operation alters the file so it is wise to dir
 	>chr1 dumped from adb: mar/14/08 12:28; last updated: 2007-12-20
 	ccctaaaccctaaaccctaaaccctaaacctctgaatccttaatccctaaatccctaaatctttaaatcctacatccat
 
-#### Task U39.1
+#### Task 5
 Now that you've tested it on just the first line, alter the command to change the entire sequence into small case, directing the output into the smallcase_chr1.fasta file.
 
 ---
@@ -203,7 +203,7 @@ The `tr` command let's you change a range of characters into another range. But 
 
 The 's' part of the `sed` command puts `sed` in 'substitute' mode, where you specify one pattern (between the first two forward slashes) to be replaced by another pattern (specified between the second set of forward slashes). Note that this doesn't actually change the contents of the file, it just changes the screen output from the previous command in the pipe. We will learn later on how to send the output from a command into a new file.
 
-#### Task U40.1
+#### Task 6
 Use the `sed` command to change the name of one of your files. 
 
 ---
@@ -239,7 +239,7 @@ This step introduces a new concept. Up till now we have sent the output of any c
 
 As already mentioned, the GFF file that we are working with is a standard file format in bioinformatics. For now, all you really need to know is that every GFF file has 9 fields, each separated with a tab character. There should always be some text at every position (even if it is just a '.' character). The last field often is used to store a lot of text.
 
-#### Task U42.1
+#### Task 7
 Subset the last 500 lines of At_genes.gff into a new file. Make the new file available in your directory.
 
 [redirection]: https://en.wikipedia.org/wiki/Redirection_(Unix)
@@ -293,7 +293,7 @@ Now let's imagine that you might want to find which features start earliest in t
 
 Here we first cut out just two columns of interest (3 & 4) from the GFF file. The `-f` option of the `cut` command lets us specify which columns we want to remove. The output is then sorted with the `sort` command. By default, `sort` will sort alphanumerically, rather than numerically, so we use the `-n` option to specify that we want to sort numerically. We have two columns of output at this point and we could sort based on either column. The `-k 2` specifies that we use the second column. Finally, we use the `head` command to get just the first 10 rows of output. These should be lines from the GFF file that have the lowest starting coordinate.
 
-#### Task U43.1
+#### Task 8
 Use a command to subset two columns (different from the example) from At_genes.gff and display the first 10 lines. 
 
 ---
@@ -363,7 +363,7 @@ Before I show you one way of doing this in Unix, think for a moment how you woul
 
 That's a long command, but it does a lot. Try to break down each step and work out what it is doing (you will need to consult the man page for some commands maybe). Notice that I use one of the other redirect operators `<` to read from a file. It took seven Unix commands to do this, but these are all relatively simple Unix commands; it is the combination of them together which makes them so powerful. One might argue that when things get this complex with Unix that it might be easier to do it in Python!
 
-#### Task U45.1
+#### Task 9
 Explain what each of the seven components of the command above does. 
 
 ---
