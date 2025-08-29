@@ -53,7 +53,7 @@ lists every file in `/usr/bin` that ends in the characters `.sh`.
 Note that the output displays __full__ paths to files, since
 each result starts with `/`.
 
-## Exercise
+## Exercise 1
 Do each of the following tasks from your current directory using a single
 `ls` command for each:
 
@@ -189,7 +189,7 @@ $ cat SRR098026.fastq
 This will print out all of the contents of the `SRR098026.fastq` to the screen.
 
 
-## Exercise
+## Exercise 2
 
 1. From the top level of your student directory, print out the contents of the `SRR097977.fastq` file. What is the last line of the file? 
 2. From your home directory, and without changing directories, use one short command to print the contents of all of the files in
@@ -246,7 +246,7 @@ and where it is in the file. If you continue to type `/` and hit return, you wil
 forward to the next instance of this sequence motif. If you instead type `?` and hit 
 return, you will search backwards and move up the file to previous examples of this motif.
 
-## Exercise
+## Exercise 3
 
 What are the next three nucleotides (characters) after the first instance of the sequence quoted above?
  
@@ -567,7 +567,7 @@ $ rm -r backup
 This will delete not only the directory, but all files within the directory. If you have write-protected files in the directory, 
 you will be asked whether you want to override your permission settings. 
 
-## Exercise
+## Exercise 4
 
 Starting in the `untrimmed_fastq` directory, do the following:
 1. Make sure that you have deleted your backup directory and all files it contains.  
@@ -640,7 +640,7 @@ CNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
 What we just did was a quick and dirty way to get a feel for the quality of your sequencing results. However, in your 
 research you will most likely use a bioinformatics tool that has a built-in program for filtering out low-quality reads. You'll learn how to use one such tool in [a later lesson](https://github.com/jamiehenzy/Genome_analysis_Explore/blob/main/Variants_tutorial.md#raw-read-quality-control).
 
-## Exercise
+## Exercise 5
 
 1. Search for the sequence `GNATNACCACTTCC` in the `SRR098026.fastq` file.
 Have your search return all matching lines and the name (or identifier) for each sequence
@@ -759,7 +759,7 @@ $ wc -l bad_reads.txt
 ```
 
 
-### Exercises
+### Exercises 6
 
 How many sequences are there in `SRR098026.fastq`? Remember that every sequence is formed by four lines.
 
@@ -1089,7 +1089,7 @@ $ for filename in *.fastq
 ```
 
 
-### Exercise
+### Exercise 7
 
 Print the file prefix of all of the `.txt` files in our current directory.
 
@@ -1119,7 +1119,7 @@ $ for filename in *.txt
 ```
 
 
-### Exercise
+### Exercise 8
 
 Remove `_2021` from all of the `.txt` files. 
 
@@ -1163,7 +1163,7 @@ Now you've written a file. You can take a look at it with `less` or `cat`, or op
 </details>
 &nbsp;
 
-## Exercise
+## Exercise 9
 
 Open nano and add the date to the top of the file and save the file as `README.txt` . 
 
@@ -1213,7 +1213,7 @@ $ bash bad-reads-script.sh
 It will look like nothing happened, but now if you look at `scripted_bad_reads.txt`, you can see that there are now reads in the file.
 
 
-## Exercise
+## Exercise 10
 
 We want the script to tell us when it's done.  
 1. Open `bad-reads-script.sh` and add the line `echo "Script finished!"` after the `grep` command and save the file.  
