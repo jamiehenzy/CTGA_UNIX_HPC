@@ -14,8 +14,6 @@ You work with labmates who know absolutely nothing about UNIX commands and high-
 * Wildcards (`*`, `?`) for file matching
 * Why relative paths (`../`) and absolute paths (`/home/user/...`) matter
 
----
-
 ### **Working on a High-Performance Cluster**
 
 * What is a “login node” vs. a “compute node”?
@@ -25,8 +23,6 @@ You work with labmates who know absolutely nothing about UNIX commands and high-
 * What environment variables are and why `$PATH` matters
 * Parallel vs. serial jobs: what’s the difference?
 
----
-
 ### **Practical Data Handling**
 
 * Compressing and uncompressing files with `gzip`/`gunzip`
@@ -34,8 +30,6 @@ You work with labmates who know absolutely nothing about UNIX commands and high-
 * Counting lines, words, or characters with `wc`
 * Finding the size of files with `du` and `ls -lh`
 * Renaming batches of files with `mv` and wildcards
-
----
 
 ### **Good Practices & Tips**
 
