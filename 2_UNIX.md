@@ -309,7 +309,7 @@ When you press the return/enter key on your keyboard you may think that this cau
 
 The relevance of this to Unix is that you will sometimes receive a text file from someone else which looks fine on their computer, but looks unreadable in the Unix text viewer that you are using. In Unix (and other programming languages) the patterns  `\n` and `\r` can both be used to denote newlines. A common fix for this requires substituting `\r` for `\n`.
 
-Copy the excel_data.csv file from GitHub into your home directory on Explorer, then use `less` to look at the file. This is a simple 4-line file that was exported from a Mac version of Microsoft Excel. You should see that if you use `less`, then this appears as one line with the newlines replaced with ^M characters. You can convert these carriage returns into Unix-friendly line-feed characters by using the tr command like so:
+Copy the excel_data.csv file from the course data folder into your student directory on Explorer, then use `less` to look at the file. This is a simple 4-line file that was exported from a Mac version of Microsoft Excel. You should see that if you use `less`, then this appears as one line with the newlines replaced with ^M characters. You can convert these carriage returns into Unix-friendly line-feed characters by using the tr command like so:
 
 	$ tr '\r' '\n' < excel_data.csv 
 	sequence 1,acacagagag 
