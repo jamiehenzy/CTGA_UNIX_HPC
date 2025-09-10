@@ -31,13 +31,11 @@ Use a command to show the names of the files in the `/courses/BIOL3411.202610/da
 **Whenever you're asked to perform an exercise with a file from any of these folders, COPY it to your own directory first.**
 
 For this tutorial you'll need to **copy** the following files into your student directory. The files are in the Arabidopsis folder, because they contain genomic data from that organism. You can copy each file individually, or try copying the Arabidopsis directory, using `cp -r <directoryname> <destination>`: 
-+ At_genes.gff.gz
-+ chr1.fasta.gz
++ At_genes.gff
++ chr1.fasta
 + intron_IME_data.fasta
 + At_proteins.fasta (you should already have the At_proteins.fasta file from the previous tutorial).
 
-Files that end in .gz are compressed, or "zipped", and need to be unzipped by using the command:
-`gunzip <filename>`
 
 ## How to Become a Unix power user
 
