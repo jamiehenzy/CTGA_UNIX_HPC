@@ -1,4 +1,4 @@
-Each student will prepare a **2-minute presentation** explaining one of the following topics. Your goal is to:
+You work with labmates who know absolutely nothing about UNIX commands and high-performance computing, so they rely on you to explain some basic concepts and demonstrate basic skills. Your job is to prepare a **2-minute presentation** explaining one of the following topics:
 
 1. **Define** the command or concept.
 2. **Demonstrate** a simple example (show input and output).
