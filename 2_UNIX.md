@@ -31,7 +31,7 @@ Use a command to show the names of the files in the "/courses/BIOL3411.202540/da
 (Since the course files are not yet available, I'll place the files you need on GitHub, in the UNIX_HPC repo)
 **Whenever you're asked to perform an exercises with a file from any of these folders, COPY it to your own directory first.**
 
-For this tutorial you'll need to **copy** the files in the 01_UNIX_HPC/Arabidopsis folder to one of your own directories (you should already have the At_proteins.fasta file from the previous tutorial).
+For this tutorial you'll need to **copy** the files in the Arabidopsis folder on GitHub to your home directory (you should already have the At_proteins.fasta file from the previous tutorial).
 
 ## How to Become a Unix power user
 
@@ -42,7 +42,7 @@ The commands that you have learned so far are essential for doing any work in Un
 ## U33: Match making
 You will often want to search files to find lines that match a certain pattern. The Unix command `grep` does this (and much more). You might already know that FASTA files (used frequently in bioinformatics) have a simple format: one header line which must start with a '>' character, followed by a DNA or protein sequence on subsequent lines. To find only those header lines in a FASTA file, we can use grep, which just requires you specify a pattern to search for, and one or more files to search.
 
-From the data folder, copy the file "intron_IME_data.fasta" from the Arabidopsis folder into your own data folder, then perform the exercise below:
+Use the file "intron_IME_data.fasta" from the Arabidopsis folder for the exercise below:
 
 	$ grep ">" intron_IME_data.fasta
 
