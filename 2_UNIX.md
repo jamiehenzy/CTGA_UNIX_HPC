@@ -29,7 +29,7 @@ Navigate to the course folders and use the `ls` command to explore the file stru
 #### Task 1
 Use a command to show the names of the files in the courses directory. You'll need to access some of these files in this Tutorial. 
 (Since the course files are not yet available, I'll place the necessary files on GitHub, in the Genome-analysis_UNIX_HPC repo)
-**Whenever you're asked to perform an exercises with a file from any of these folders, COPY it to your own directory first.**
+**Whenever you're asked to perform an exercise with a file from any of these folders, COPY it to your own directory first.**
 
 For this tutorial you'll need to **copy** the following files from GitHub into your home directory, using wget or curl: 
 + At_genes.gff.gz
