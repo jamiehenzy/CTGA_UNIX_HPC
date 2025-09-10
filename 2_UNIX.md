@@ -37,6 +37,9 @@ For this tutorial you'll need to **copy** the following files from GitHub into y
 + intron_IME_data.fasta
 + At_proteins.fasta (you should already have the At_proteins.fasta file from the previous tutorial).
 
+Files that end in .gz are compressed, or "zipped", and need to be unzipped by using the command:
+`gunzip <filename>`
+
 ## How to Become a Unix power user
 
 The commands that you have learned so far are essential for doing any work in Unix but they don't really let you do anything that is very useful. The following sections will introduce a few new commands that will start to show you how powerful Unix is!
