@@ -1,7 +1,7 @@
 # Part 2: Advanced Unix
 It's important to keep in mind the distinction between working on the command line _locally_ versus _remotely_. When you're working locally, you see the file structure of your own computer. When you work remotely, you see the file structure of the Explorer Cluster (EC). For Unix_1, you worked locally. For Unix_2, you'll log onto EC and work remotely.
 
-There are three distinct directories associated with your account: home, scratch, and student. When you log onto the system, you will be in your **home** directory by default. A **scratch** directory is available for you to play around in. And you'll submit your assignments in your **student** directory. **(Til further notice, due to technical difficulties with Explorer, use your /home/<username> folder in place of your student folder).** Each of the paths includes your username. For example, mine look like this:
+There are three distinct directories associated with your account: home, scratch, and student. When you log onto the system, you will be in your **home** directory by default. A **scratch** directory is available for you to play around in. And you'll submit your assignments in your **student** directory. Each of the paths includes your username. For example, mine look like this:
 
 `/home/jhenzy/`
 `/scratch/jhenzy/`
@@ -23,7 +23,7 @@ Wait a few seconds for a prompt to appear that has a c plus a number. The c indi
 ## U32: Familiarize yourself with the shared files
 Navigate to the course folders and use the `ls` command to explore the file structure:
 
-`cd /courses/BIOL3411.202610` (due to technical difficulties, the course directory is not yet available)
+`cd /courses/BIOL3411.202610`
 
 
 #### Task 1
