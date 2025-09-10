@@ -8,6 +8,7 @@ There are three distinct directories associated with your account: home, scratch
 `/courses/BIOL3411.202540/students/jhenzy/`
 
 As you can see, your student directory is part of a larger courses directory. This directory also includes shared data files you can access (more on this below).
+(Till further notice, because of technical difficulties with Explorer, use your /home/<username> folder in place of your course student folder)
 
 ## U31: Log onto EC
 
@@ -22,12 +23,12 @@ Wait a few seconds for a prompt to appear that has a c plus a number. The c indi
 ## U32: Familiarize yourself with the shared files
 Navigate to our course's folders and use the `ls` command to explore the file structure:
 
-`cd /courses/BIOL3411.202540`
+`cd /courses/BIOL3411.202540` (due to technical difficulties, the course directory is not yet available)
 
 
 #### Task 1
 Use a command to show the names of the files in the "/courses/BIOL3411.202540/data" folder. You'll need to access some of these files in this Tutorial. 
-
+(Since the course files are not yet available, I'll place the files you need on GitHub, in the UNIX_HPC repo)
 **Whenever you're asked to perform an exercises with a file from any of these folders, COPY it to your own directory first.**
 
 For this tutorial you'll need to **copy** the files in the 01_UNIX_HPC/Arabidopsis folder to one of your own directories (you should already have the At_proteins.fasta file from the previous tutorial).
