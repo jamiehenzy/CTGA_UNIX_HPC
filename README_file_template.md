@@ -87,9 +87,9 @@ ___
 
 ___
 
-## YOUR README files
+## _Your_ README files
 
-For purposes of this course, you'll supply a README file for each assignment you submit to the cluster. In fact, having a README file is so important that no assignment will be graded without one. Compared to a full-on README file that would accompany a coding project, however, your README file will be much shorter and simpler. The main point is to make it user-friendly, especially since the user is ME, the one who assigns your grade! What to include:
+For purposes of this course, you'll supply a README file for each assignment you submit to the cluster. In fact, having a README file is so important that **no assignment will be graded without one**. Compared to a full-on README file that would accompany a coding project, however, your README file will be much shorter and simpler. The main point is to make it user-friendly, especially since the user is ME, the one who assigns your grade! What to include:
 
 + Purpose of submitted work
 + Absolute path of each file
@@ -113,8 +113,10 @@ The bash version on your laptop (local) will likely be different from the versio
 
 ### Notes on editing or other specifics
 
-In addition to the absolute requirement of including a README file, your submissions also absolutely MUST NOT CONTAIN EXTRANEOUS LINES OF TEXT. What do I mean by this? Let's say you are asked to do something with a large file and your first attempt results in a display of the entire file on your screen, making up hundreds of lines of text. I ABSOLUTELY WILL NOT SCROLL THROUGH THIS TO TRY TO FIND YOUR WORK. Instead, after saving your Terminal session as a text file, you'll open it with a text editor like TextEdit on Mac or Notepad on Windows and delete all those extra lines. Or, say you are asked to print the contents of your Download file but you have never once in your life removed a file so there are a hundred. To know that you carried out the command correctly, I only need to see a few lines of content from your Downloads and you can delete the rest after saving the file and before submitting it. 
+In addition to the absolute requirement of including a README file, your submissions also absolutely MUST NOT CONTAIN EXTRANEOUS LINES OF TEXT. What do I mean by this? Let's say you are asked to do something with a large file and your first attempt results in a display of the entire file on your screen, making up hundreds of lines of text. I ABSOLUTELY WILL NOT SCROLL THROUGH THIS TO TRY TO FIND YOUR WORK. What you should do instead: after saving your Terminal session as a text file, open it with a text editor like TextEdit on Mac or Notepad on Windows and delete all those extra lines. Or, say you are asked to print the contents of your Download file but you have never once in your life removed a file so there are a hundred. To know that you carried out the command correctly, I only need to see a few lines of content from your Downloads and you can delete the rest after saving the file and before submitting it. 
 
 In either case, include a note in your README file that says something like, "I deleted content to save space in exercise U24", etc.
+
+### Where to place your README file
 
 You only need one README file for any submission, and it should be placed at the top level of your submitted files. For example, your UNIX/HPC submission might be in a directory called Tutorials, with a subdirectory called, "UNIX_HPC". The logical place for the README file would be at the same level as "UNIX_HPC". Again, think about the user and how best to help them navigate your files so that they will be more inclined to evaluate your work generously ("Ahem").
