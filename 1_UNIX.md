@@ -26,7 +26,7 @@ You are probably used to working with programs like the Apple Finder or the Wind
 
 A terminal is the common name for the program that does two main things. It allows you to type input to the computer (i.e. run programs, move/view files etc.) and it allows you to see output from those programs. If you're working on a Mac, you can open the application known as Terminal. If you're working on a PC, you'll need to use Windows Subsystem for Linux (WSL).
 
-Once you are in Terminal, you should see something that looks like the following (any text that appears inside your terminal window will look different):
+Once you are in Terminal, you should see something that looks like the following (but with your personal information):
 
 ![alt text](https://github.com/jamiehenzy/Genome-analysis_Unit_1/blob/assets/terminal.png)
 
@@ -36,28 +36,28 @@ Before we go any further, you should note that you can:
 * resize the window (this will often be necessary) 
 * have multiple terminal windows on screen (see the Shell menu) 
 * have multiple tabs open within each window (again see the Shell menu)
+* choose from among numerous styles (homebrew is my favorite -- old school!)
 
-There will be many situations where it will be useful to have multiple terminals open and it will be a matter of preference as to whether you want to have multiple windows, or one window with multiple tabs (there are keyboard shortcuts for switching between windows, or moving between tabs). 
+There will be situations where it will be useful to have more than one terminal open because you are doing a couple of different tasks. In such cases, I recommend you use different styles so that you can keep track of which is which.
 
 --- 
 
 ## U2. Your first Unix command
 
-Unix keeps files arranged in a hierarchical structure. From the 'top-level' of the computer, there will be a number of directories, each of which can contain files and subdirectories, and each of those in turn can of course contain more files and directories and so on, ad infinitum. It's important to note that you will always be in a directory when using the terminal. The default behavior is that when you open a new terminal you start in your own home directory (containing files and directories that only you can modify).
+Unix keeps files arranged in a hierarchical structure. From the 'top-level' of the computer, there will be a number of directories, each of which can contain files and subdirectories, and each of those in turn can of course contain more files and directories and so on, _ad infinitum_. It's important to note that you will always be in some specific directory when using the terminal. The default behavior is that when you open a new terminal, you start in your own home directory (containing files and directories that only you can modify).
 
-To see what files are in our home directory, we need to use the `ls` command. This command *list*s the contents of a directory. So why don't they call the command *list* instead? Well, this is a good thing because typing long commands over and over again is tiring and time-consuming. There are many (frequently used) Unix commands that are just two or three letters. If we run the `ls` command we should see something like:
+To see what files are in our home directory, we need to use the `ls` command. This command *list*s the contents of a directory. So why don't they call the command *list* instead? Well, this is a good thing because typing long commands over and over again is tiring and time-consuming. There are many (frequently used) Unix commands that are just two or three letters. If we run the `ls` command we should see something _like_:
 
 	olson27-1:~ kbradnam$ ls 
 	Application Shortcuts 	Documents	Library 
 	Desktop					Downloads 
 	olson27-1:~ kbradnam$
 
-There are four things that you should note here:
-
-1. You will probably see different output to what is shown here, it depends on your computer. Don't worry about that for now. 
-2. The `olson27-1:~ kbradnam$` text that you see is the Unix command prompt. It contains a user name (kbradnam), the name of the machine that this user is working on (olson27-1) and the name of the current directory. Note that the command prompt might not look the same on different Unix systems. For example, your prompt may be the \% symbol instead of \$.
-3. The output of the `ls` command lists five things. In this case, they are all directories, but they could also be files. We'll learn how to tell them apart later on. 
-4. After the `ls` command finishes it produces a new command prompt, ready for you to type your next command.
+There are three things that you should note here:
+ 
+1. The `olson27-1:~ kbradnam$` text (but with your name) is the Unix command prompt. It contains a user name (kbradnam), the name of the machine that this user is working on (olson27-1), and the name of the current directory. Note that the command prompt might not look the same on different Unix systems. For example, your prompt may be the \% symbol instead of \$.
+2. In this particular case, the output of the `ls` command lists five things, which happen to all be directories, but they could also be files. We'll learn how to tell them apart later on. 
+3. After the `ls` command finishes it produces a new command prompt, ready for you to type your next command.
 
 #### Task 1
 Go to your home directory and use the `ls` command to display the contents.
@@ -66,7 +66,7 @@ Go to your home directory and use the `ls` command to display the contents.
 
 ## U3: The Unix tree
 
-Looking at directories from within a Unix terminal can often seem confusing. But bear in mind that these directories are exactly the same type of folders that you can see if you use Apple's graphical file-management program (known as Finder). A tree analogy is often used when describing computer filesystems. From the root level (/) there can be one or more top level directories, though most Macs will have about a dozen. In the example below, we show just three. When you log in to a computer you are working with your files in your home directory, and this will nearly always be inside a Users directory.
+Looking at directories from within a Unix terminal can often seem confusing. But bear in mind that these directories are exactly the same type of folders that you can see if you use Apple's graphical file-management program (known as Finder). A tree analogy is often used when describing computer filesystems. From the root level (/) there can be one or more top level directories, though most Macs will have about a dozen. In the example below, we show just three. When you log in to a computer you are working with your files in your home directory, and this will nearly always be inside a Users directory. Note: your home directory is NOT the top-level directory. The root directory is (this tree is upside-down).
 
 All Macs have an applications directory where all the GUI (graphical user interface) programs are kept (e.g. iTunes, Microsoft Word, Terminal). Another directory that will be on all Macs is the Volumes directory. In addition to any attached _external_ drives, the Volumes directory should also contain directories for every _internal_ hard drive (of which there should be at least one, in this case it's simply called Mac). It will help to think of this tree when we come to copying and moving files. E.g. if we had a file in the Code directory and wanted to copy it to the keith directory, we would have to go _up_ four levels to the root level, and then _down_ two levels.
 
@@ -76,7 +76,7 @@ All Macs have an applications directory where all the GUI (graphical user interf
 
 ## U4: Finding out where you are
 
-There may be many hundreds of directories on any Unix machine, so how do you know which one you are in? The command `pwd` will Print the Working Directory:
+There may be many hundreds of directories on any Unix machine, so how do you know which one you are in? The command `pwd` will *p*rint the *w*orking *d*irectory:
 
 	olson27-1:~ kbradnam$ pwd 
 	/users/clmuser
