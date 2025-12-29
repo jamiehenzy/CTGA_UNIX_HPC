@@ -7,6 +7,7 @@ For all commands, be familiar with typical options/flags, such as -l, .., -r, et
 + pwd
 + cd
 + ls
++ absolute versus relative paths
 
 ## Commands to create and interact with files and directories
 + mkdir
