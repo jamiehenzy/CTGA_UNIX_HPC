@@ -506,14 +506,25 @@ In both cases, we included a deliberate typo when specifying the name of the dir
 
 ## U25: Downloading files from GitHub
 
-You'll frequently need to work with files that you download from various online sources and databases, such as GitHub, NCBI, or Ensembl. To start, let's download a file from our UNIX_HPC GitHub repo called At_proteins.fa. The ".fa" extension tells us the file is in the "fasta" format, which is a simple text format used for genomic sequences. This particular files contains protein sequences from a much-studied plant, _Arabidopsis thaliana_. Fasta format always starts with the \> symbol followed by a descriptive header for the first line. Subsequent lines contain the actual sequence, which can be either a nucleotide or amino acid sequence. Sometimes, instead of the ".fa" extension you'll see ".fasta", ".fna" (for nucleotides), or ".faa" (for amino acids).
+You'll frequently need to work with files that you download from various online sources and databases, such as GitHub, NCBI, or Ensembl. To start, let's download a file from our UNIX_HPC GitHub repo called At_proteins.fa. The ".fasta" extension tells us the file is in the "fasta" format, which is a simple text format used for genomic sequences. This particular files contains protein sequences from a much-studied plant, _Arabidopsis thaliana_. Fasta format always starts with the \> symbol followed by a descriptive header for the first line. Subsequent lines contain the actual sequence, which can be either a nucleotide or amino acid sequence. Sometimes, instead of the ".fasta" extension you'll see ".fa", ".fna" (for nucleotides), or ".faa" (for amino acids).
 
 To download the file, first click on the name of the file in GitHub, then right-click on the "Raw" tab to "Copy Link Address". You'll use either "wget" or "curl" to download, depending on your system. Try the "wget" command below first, and if you receive an error saying "command not found", then try the curl command, instead:
 
-'wget <pasted_link>'
+```
+wget <pasted_link>
+```
+Or, if wget elicits a "command not found" error, try:
 
-Many of the files you'll work with for this course are quite large and come in a compressed, or "zipped" version.  
+```
+curl -O <pasted_link>
+```
 
+Many of the files you'll work with for this course are quite large and come in a compressed, or "zipped" version. For example, in our GitHub repo you'll see a file called, "At_genes.gff.gz". The ".gz" tells you this is a compressed (zipped) file. Download this file in the same way you downloaded the previous file. However, once you've downloaded it, you cannot look at its contents until you unzip it. The .gz extension is specific to a type of zipping called, gzipping, and to unzip we use "gunzip":
+
+```
+gunzip <filename>
+```
+Did it work? You'll use this file in an upcoming tutorial. But for this next part, you'll take a peek at your newly downloaded At_proteins.fa file.
 
 ## U26: Less is more
 
@@ -530,7 +541,7 @@ Make a new directory called Data in your Desktop. Move the At_proteins.fasta fil
 
 ---
 
-## U26: Directory enquiries
+## U27: Directory enquiries
 
 When you have a directory containing a mixture of files and directories, it is not often clear which are files and which, directories. One solution is to use `ls -l` which will put a **d** at the start of each line of output for items which are directories. A better solution is to use `ls -p`. This command simply adds a trailing slash character to those items which are directories. Compare the following:
 
@@ -553,7 +564,7 @@ Create an alias such that typing `rm` will always invoke `rm -i`. Try running th
 
 ---
 
-## U27: Fire the editor
+## U28: Fire the editor
 
 The problem with aliases is that they only exist in the current terminal session. Once you log out, or use a new terminal window, then you'll have to retype the alias. Fortunately though, there is a way of storing settings like these. To do this, we need to be able to create a configuration file and this requires using a text editor. We could use a program like TextEdit to do this (or even Microsoft Word), but as this is a Unix course,  we will use a simple Unix editor called nano. Let's create a file called profile:
 
@@ -584,7 +595,7 @@ Now try the `ls` command to see if the output looks different. Next, use `touch`
 
 ---
 
-## U28: Hidden treasure
+## U29: Hidden treasure
 
 In addition to adding aliases, profile files in Unix are very useful for many other reasons. Profile files are hidden files (or "dot" files). If a filename starts with a dot, Unix will treat it as a hidden file. To see it, you  can use `ls -a` which lists all hidden files (there may be several more files that appear) in addition to the other files.
 
@@ -605,7 +616,7 @@ Again type the `ls` command. The output should now look different.
 
 ---
 
-## U29: Sticking to the script
+## U30: Sticking to the script
 
 Unix can also be used as a programming language just like Python. Depending on what you want to do, a Unix script might solve all your problems and mean that you don't really need to learn Python at all.
 
@@ -640,7 +651,7 @@ The chmod command can also modify read and write permissions for files, and chan
 
 ---
 
-## U30: The power of shell scripts
+## U31: The power of shell scripts
 
 Time to make some Unix shell scripts that might actually be useful.
 
