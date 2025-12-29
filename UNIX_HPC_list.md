@@ -18,8 +18,8 @@ For all commands, be familiar with typical options/flags, such as -l, .., -r, et
 + cat
 + less (spacebar, quit, how to search within file)
 + |
-+ >
-+ >>
++ \>
++ \>>
 + cut
 + sort
 + uniq
