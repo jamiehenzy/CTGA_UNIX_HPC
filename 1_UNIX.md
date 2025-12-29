@@ -504,9 +504,20 @@ In both cases, we included a deliberate typo when specifying the name of the dir
 
 ---
 
-## U25: Less is more
+## U25: Downloading files from GitHub
 
-So far we have covered listing the contents of directories and moving/copying/deleting either files and/or directories. Now we will quickly cover how you can look at files; in Unix the `less` command lets you view (but not edit) text files. Let's take a look at a file of _Arabidopsis thaliana_ protein sequences. First you'll need to download the "At_proteins.fasta" file from Genome-analysis_UNIX_HPC repository on GitHub. Click on the filename, then right-click the `Raw` button to Copy Link Address. In Terminal, type the command `wget` and paste the link address and hit enter.
+You'll frequently need to work with files that you download from various online sources and databases, such as GitHub, NCBI, or Ensembl. To start, let's download a file from our UNIX_HPC GitHub repo called At_proteins.fa. The ".fa" extension tells us the file is in the "fasta" format, which is a simple text format used for genomic sequences. This particular files contains protein sequences from a much-studied plant, _Arabidopsis thaliana_. Fasta format always starts with the \> symbol followed by a descriptive header for the first line. Subsequent lines contain the actual sequence, which can be either a nucleotide or amino acid sequence. Sometimes, instead of the ".fa" extension you'll see ".fasta", ".fna" (for nucleotides), or ".faa" (for amino acids).
+
+To download the file, first click on the name of the file in GitHub, then right-click on the "Raw" tab to "Copy Link Address". You'll use either "wget" or "curl" to download, depending on your system. Try the "wget" command below first, and if you receive an error saying "command not found", then try the curl command, instead:
+
+'wget <pasted_link>'
+
+Many of the files you'll work with for this course are quite large and come in a compressed, or "zipped" version.  
+
+
+## U26: Less is more
+
+So far we have covered listing the contents of directories and moving/copying/deleting either files and/or directories. Now we will quickly cover how you can look at files; in Unix the `less` command lets you view (but not edit) text files. Let's take a look at a file of  
 
 Now we can look at the contents:
 
