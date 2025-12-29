@@ -24,7 +24,7 @@ You are probably used to working with programs like the Apple Finder or the Wind
 
 ## U1. The Terminal
 
-A terminal is the common name for the program that does two main things. It allows you to type input to the computer (i.e. run programs, move/view files etc.) and it allows you to see output from those programs. If you're working on a Mac, you can open the application known as Terminal. If you're working on a PC, you'll need to use Windows Subsystem for Linus (WSL).
+A terminal is the common name for the program that does two main things. It allows you to type input to the computer (i.e. run programs, move/view files etc.) and it allows you to see output from those programs. If you're working on a Mac, you can open the application known as Terminal. If you're working on a PC, you'll need to use Windows Subsystem for Linux (WSL).
 
 Once you are in Terminal, you should see something that looks like the following (any text that appears inside your terminal window will look different):
 
