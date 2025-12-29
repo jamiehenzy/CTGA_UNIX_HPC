@@ -40,7 +40,6 @@ For all commands, be familiar with typical options/flags, such as -l, .., -r, et
 + man
 + source
 + history
-+ phred scores
 
 ## Simple scripts
 + bash script
@@ -67,7 +66,7 @@ For all commands, be familiar with typical options/flags, such as -l, .., -r, et
 
 ## Best practices
 + README files
-+ ab-complete
++ tab-complete
 + naming files: legal characters; optimized for tab-complete
 + organizing material
 + #(hash) commenting
