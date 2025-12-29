@@ -76,12 +76,12 @@ All Macs have an applications directory where all the GUI (graphical user interf
 
 ## U4: Finding out where you are
 
-There may be many hundreds of directories on any Unix machine, so how do you know which one you are in? The command `pwd` will *p*rint the *w*orking *d*irectory:
+There may be many hundreds of directories on any Unix machine, so how do you know which one you are in? The command `pwd` will **p**rint the **w**orking **d**irectory:
 
 	olson27-1:~ kbradnam$ pwd 
 	/users/clmuser
 
-When you log in to a Unix computer, you are typically placed into your _home_ directory, which will be \/Users\/yourname (on a Mac). An abbreviation for this path is simply the tilde (\~) sign. No matter where  you are in your tree, by typing `cd ~` you can get back home (\/Users\/yourname).
+When you log in to a Unix computer, you are typically placed into your _home_ directory, which will be \/Users\/yourname (on a Mac). An abbreviation for this path is simply the tilde (\~) sign. No matter where you are in your tree, by typing `cd ~` you can get back home (\/Users\/yourname).
 
 In this example, after we log in, we are placed in a directory called 'clmuser' which itself is a subdirectory of another directory called 'users'. Conversely, 'users' is the parent directory of 'clmuser'. The first forward slash that appears in a list of directory names always refers to the top level directory of the file system (known as the root directory). The remaining forward slash (between 'users' and 'clmuser') delimits the various parts of the directory hierarchy. If you ever get 'lost' in Unix, remember the `pwd` command.
 
