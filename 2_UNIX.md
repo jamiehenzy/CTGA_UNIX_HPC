@@ -10,7 +10,7 @@ There are three distinct directories associated with your account: home, scratch
 As you can see, your student directory is part of a larger **courses** directory. This directory also includes shared data files you can access (more on this below).
 
 
-## U31: Log onto EC
+## U32: Log onto EC
 
 `ssh <login_name>@login.explorer.northeastern.edu`
 
@@ -20,7 +20,7 @@ As mentioned previously, you are by default in your home directory. You also are
 
 Wait a few seconds for a prompt to appear that has a c plus a number. The c indicates you are on the computing node.
 
-## U32: Familiarize yourself with the shared files
+## U33: Familiarize yourself with the shared files
 Navigate to the course folders and use the `ls` command to explore the file structure:
 
 `cd /courses/BIOL3411.202610`
@@ -43,7 +43,7 @@ The commands that you have learned so far are essential for doing any work in Un
 
 ---
 
-## U33: Match making
+## U34: Match making
 You will often want to search files to find lines that match a certain pattern. The Unix command `grep` does this (and much more). You might already know that FASTA files (used frequently in bioinformatics) have a simple format: one header line which must start with a '>' character, followed by a DNA or protein sequence on subsequent lines. To find only those header lines in a FASTA file, we can use grep, which just requires you specify a pattern to search for, and one or more files to search.
 
 Use the file "intron_IME_data.fasta" for the exercise below:
@@ -74,7 +74,7 @@ This will produce lots of output which will flood past your screen. If you ever 
 
 ---
 
-## U34: Your first ever Unix pipe
+## U35: Your first ever Unix pipe
 
 By now, you might be getting a bit fed up waiting for the `grep` command to finish, or you might want a cleaner way of controlling things without having to reach for Ctrl-C (also represented as \^C). Ideally, you might want to look at the output from any command in a controlled manner, i.e. you might want to use a Unix program like `less` to view the output.
 
@@ -101,7 +101,7 @@ Notice that you still have control of your output as you are now in the `less` p
 
 ---
 
-## U35: Heads and tails
+## U36: Heads and tails
 
 Sometimes we do not want to use `less` to see _all_ of the output from a command like grep. We might just want to see a few lines to get a feeling for what the output looks like, or just check that our program (or Unix command) is working properly. There are two useful Unix commands for doing this: head and tail. These commands show (by default) the first or last 10 lines of a file (though it is easy to specify more or fewer lines of output). So now, let's look for another pattern which might be in more than one of the files in your directory. If we didn't know whether the DNA/protein sequence in a FASTA files was in upper-case or lower-case letters, then we could use the `-i` option of `grep` which 'ignores' case when searching:
 
@@ -121,7 +121,7 @@ The `*` character acts as a wildcard meaning 'search all files in the current di
 
 ---
 
-## U36: Getting fancy with regular expressions
+## U37: Getting fancy with regular expressions
 
 A concept that is supported by many Unix programs and also by most programming languages is that of using "regular expressions" ("regex"). These allow you to specify search patterns which are quite complex and really help restrict the huge amount of data that you might be searching for to some very specific lines of output. E.g. you might want to find lines that start with an 'ATG' and finish with 'TGA' and also have at least three AC dinucleotides in the middle:
 
@@ -151,7 +151,7 @@ Try searching for the following patterns to ensure you understand what `.` and `
 
 ---
 
-## U37: Counting with `grep`
+## U38: Counting with `grep`
 
 Rather than showing you the lines that match a certain pattern, `grep` can also just give you a count of how many lines match. This is one of the frequently used `grep` options. Running `grep -c` simply counts how many lines match the specified pattern. It doesn't show you the lines themselves, just a number:
 
@@ -163,7 +163,7 @@ Count how many times each of the first three patterns from **Task U36.1** occurs
 
 ---
 
-## U38: Regular expressions in `less`
+## U39: Regular expressions in `less`
 
 You have seen already how you can use `less` to view files, and also to search for patterns. If you are viewing a file with `less`, you can type a forward-slash `/` character, and this allows you to then specify a pattern and it will then search for (and highlight) all matches to that pattern. Technically it is searching forward from whatever point you are at in the file. You can also type a question-mark `?` and `less` will allow you to search backwards. The real bonus is that the patterns you specify can be regular expressions.
 
@@ -172,7 +172,7 @@ Try viewing a DNA sequence file (chr1.fasta or the introns file) with `less` and
 
 ---
 
-## U39: Let me transl(iter)ate that for you
+## U40: Let me transl(iter)ate that for you
 
 We have seen that these sequence files contain upper-case characters. What if we wanted to turn them into lower-case
 characters (because maybe another bioinformatics program will only work if they are lower-case)? The Unix command `tr`
@@ -194,7 +194,7 @@ Now that you've tested it on just the first line, alter the command to change th
 
 ---
 
-## U40: That's what she sed
+## U41: That's what she sed
 
 The `tr` command let's you change a range of characters into another range. But what if you wanted to change a particular pattern into something completely different? Unix has a very powerful command called `sed` that is capable of performing a variety of text manipulations. Let's assume that you want to change the way the FASTA header looks:
 
@@ -213,7 +213,7 @@ Use the `sed` command to change the name of one of your files.
 
 ---
 
-## U41: Word up
+## U42: Word up
 
 For this section we want to work with a different type of file. It is sometimes good to get a feeling for how large a file is before you start running lots of commands against it. The `ls -l` command will tell you how big a file is, but for many purposes it is often more desirable to know how many 'lines' it has. That is because many Unix commands like `grep` and `sed` work on a line by line basis. Fortunately, there is a simple Unix command called `wc` (word count) that does this:
 
@@ -225,7 +225,7 @@ The three numbers in the output above count the number of lines, words and bytes
 
 ---
 
-## U42: GFF and the art of redirection
+## U43: GFF and the art of redirection
 
 The Arabidopsis file we looked at above is a "GFF file". This is a common file format in bioinformatics and GFF files are used to describe the location of various features on a DNA sequence. Features can be exons, genes, binding sites etc, and the sequence can be a single gene or (more commonly) an entire chromosome.
 
@@ -252,7 +252,7 @@ Subset the last 500 lines of At_genes.gff into a new file. Make the new file ava
 
 ---
 
-## U43: Not just a pipe dream
+## U44: Not just a pipe dream
 
 The 2nd and/or 3rd fields of a GFF file are usually used to describe some sort of biological feature. We might be interested in seeing how many different features are in our file:
 
@@ -303,7 +303,7 @@ Use a command to subset two columns (different from the example) from At_genes.g
 
 ---
 
-## U44: The end of the line
+## U45: The end of the line
 
 When you press the return/enter key on your keyboard you may think that this causes the same effect no matter what computer you are using. The visible effects of hitting this key are indeed the same...if you are in a word processor or text editor, then your cursor will move down one line. However, behind the scenes pressing enter will generate one of two different events (depending on what computer you are using). Technically speaking, pressing enter generates a newline character, which is represented internally by either a _line feed_ or _carriage return_ character (actually, Windows uses a combination of both to represent a newline). If this is all sounding confusing, well it is, and it is even more complex than we are revealing here.
 
@@ -323,7 +323,7 @@ This will convert the characters but not save the resulting output. If you want 
 
 ---
 
-## U45: This one goes to 11
+## U46: This one goes to 11
 
 Finally, let's parse the `intron_IME_data.fasta` file to see if we can extract a subset of sequences that match criteria based on something in the FASTA header line. Every intron sequence in this file has a header line that contains the following pieces of information:
 
