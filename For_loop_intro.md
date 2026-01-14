@@ -41,11 +41,8 @@ done</code></pre>
   echo "Base name: $base"
 done</code></pre>
 
-  <div class="exercise">
-    <strong>Exercise 1:</strong> Try this with <code>time</code> and compare speed:
-    <pre><code>time for file in *.fastq; do base=$(basename "$file" .fastq); done
-time for file in *.fastq; do base="${file%.fastq}"; done</code></pre>
-  </div>
+Try this with <code>time</code> and compare speed by typing the command <pre><code>time</code></pre> on the command line in front of <pre><code>bash</code></pre>.
+    
 
   <h2>Part 4: Create directories per sample</h2>
   <pre><code>for file in *.fastq; do
