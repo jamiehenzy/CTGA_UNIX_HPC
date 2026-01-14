@@ -27,6 +27,7 @@ Make the script executable:
   <div class="feedback">
     <strong>Expected output:</strong> One line per file, like <code>Processing SRR001.fastq</code>
   </div>
+What happens if you run the script from a different directory?
 
   <h2>Part 2: Extract base name with basename</h2>
   <pre><code>for file in *.fastq; do
