@@ -1,7 +1,12 @@
 
   <h1>For Loop Tutorial</h1>
 
-  <p><strong>Learning goals:</strong> Use <code>for</code> loops to process multiple files, extract base names using <code>basename</code> and shell parameter expansion, and simulate file-based workflows.</p>
+  Learning goals: 
+  + Use for loops to process multiple files
+  + Practice using nano editor to write scripts
+  + Practice assigning permissions
+  + Extract base names using <code>basename</code> and shell parameter expansion
+  + Simulate file-based workflows
 
   <h2>Setup</h2>
   <pre><code>mkdir -p ~/unix_tutorial/seq_data
