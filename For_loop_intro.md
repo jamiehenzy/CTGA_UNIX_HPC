@@ -41,8 +41,12 @@ done</code></pre>
   echo "Base name: $base"
 done</code></pre>
 
-Try this with <code>time</code> and compare speed by typing the command <code>time</code> on the command line in front of <code>bash</code>.
-    
+Compare the speed of the basename and shell expansion methods by typing <code>time</code> on the command line in front of <code>bash</code>.
+For example: 
+<pre><code>time bash yourscript.sh</code></pre>   
+or
+<pre><code>time .\/yourscript.sh</code></pre>
+
 
   <h2>Part 4: Create directories per sample</h2>
   <pre><code>for file in *.fastq; do
