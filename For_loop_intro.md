@@ -19,7 +19,7 @@ touch SRR00{1..6}.fastq</code></pre>
   echo "Processing $file"
 done</code></pre>
 
-Now open nano (see [UNIX tutorial]([https://github.com/jamiehenzy/Genome-analysis_UNIX_HPC/blob/main/1_UNIX.md#u28-fire-the-editor]) if you need a refresher) and add as the first line:
+Now open nano (see [UNIX tutorial](https://github.com/jamiehenzy/Genome-analysis_UNIX_HPC/blob/main/1_UNIX.md#u28-fire-the-editor) if you need a refresher) and add as the first line:
 
   <pre><code>#!/bin/bash</code></pre>
 
