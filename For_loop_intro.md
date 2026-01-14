@@ -1,5 +1,5 @@
 
-  <h1>Unix for Biologists: For Loop Tutorial</h1>
+  <h1>For Loop Tutorial</h1>
 
   <p><strong>Learning goals:</strong> Use <code>for</code> loops to process multiple files, extract base names using <code>basename</code> and shell parameter expansion, and simulate file-based workflows.</p>
 
