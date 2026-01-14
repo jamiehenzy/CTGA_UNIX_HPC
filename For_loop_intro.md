@@ -45,7 +45,7 @@ Compare the speed of the basename and shell expansion methods by typing <code>ti
 For example: 
 <pre><code>time bash yourscript.sh</code></pre>   
 or
-<pre><code>time .\/yourscript.sh</code></pre>
+<pre><code>time ./yourscript.sh</code></pre>
 
 
   <h2>Part 4: Create directories per sample</h2>
