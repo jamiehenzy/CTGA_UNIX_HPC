@@ -8,10 +8,24 @@
 cd ~/unix_tutorial/seq_data
 touch SRR00{1..6}.fastq</code></pre>
 
+Examine these lines of code and think about what they will do:
+
   <h2>Part 1: Basic For Loop</h2>
   <pre><code>for file in *.fastq; do
   echo "Processing $file"
 done</code></pre>
+
+Now open nano and add as the first line:
+
+  <pre><code>#!/bin/bash
+done</code></pre>
+
+Then add the lines of code in Part 1 and give the file a title with the extension for scripts, ".sh".
+Make the script executable: 
+
+ <pre><code>chmod +x yourfilename.sh
+done</code></pre>
+
 
   <div class="feedback">
     <strong>Expected output:</strong> One line per file, like <code>Processing SRR001.fastq</code>
