@@ -71,19 +71,19 @@ done</code></pre>
 </html>
 
 
-  <h2>Challenge: Create directories per sample</h2>
+  <h2>Challenge 1: Create directories per sample</h2>
   <pre><code>for file in *.fastq; do
   sample="${file%.fastq}"
   mkdir "$sample"
   echo "Created folder for $sample"
 done</code></pre>
 
-  <h2>Simulate output file per sample</h2>
+  <h2>Challenge 2: Simulate output file per sample</h2>
   <pre><code>for file in *.fastq; do
   sample="${file%.fastq}"
   echo "Simulated analysis of $file" > "$sample/${sample}_log.txt"
 done</code></pre>
 
   <div class="exercise">
-    <strong>Exercise 2:</strong> Check that each folder has a <code>_log.txt</code> file inside.
+    <strong>Check:</strong> does each folder have a <code>_log.txt</code> file inside?
   </div>
