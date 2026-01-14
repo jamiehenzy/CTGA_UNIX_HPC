@@ -41,7 +41,7 @@ done</code></pre>
   echo "Base name: $base"
 done</code></pre>
 
-Try this with <code>time</code> and compare speed by typing the command <pre><code>time</code></pre> on the command line in front of <pre><code>bash</code></pre>.
+Try this with <code>time</code> and compare speed by typing the command <code>time</code> on the command line in front of <code>bash</code>.
     
 
   <h2>Part 4: Create directories per sample</h2>
