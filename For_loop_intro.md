@@ -1,40 +1,4 @@
 
-<head>
-  <meta charset="UTF-8">
-  <title>Unix for Biologists: For Loop Tutorial</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    code {
-      background-color: #f4f4f4;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-    pre {
-      background-color: #f9f9f9;
-      padding: 10px;
-      border-left: 4px solid #ccc;
-      overflow-x: auto;
-    }
-    .exercise {
-      background: #e0f7fa;
-      padding: 10px;
-      border-left: 5px solid #00796b;
-      margin: 20px 0;
-    }
-    .feedback {
-      background: #fff3e0;
-      padding: 10px;
-      border-left: 5px solid #f57c00;
-    }
-  </style>
-</head>
-<body>
   <h1>Unix for Biologists: For Loop Tutorial</h1>
 
   <p><strong>Learning goals:</strong> Use <code>for</code> loops to process multiple files, extract base names using <code>basename</code> and shell parameter expansion, and simulate file-based workflows.</p>
