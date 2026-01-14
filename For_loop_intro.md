@@ -53,10 +53,6 @@ or
 <pre><code>time ./yourscript.sh</code></pre>
 
 
-  <div class="exercise">
-    <strong>Exercise 2:</strong> Check that each folder has a <code>_log.txt</code> file inside.
-  </div>
-
   <h2>Part 4: Rename .fastq to .fq</h2>
   <pre><code>for file in *.fastq; do
   new="${file%.fastq}.fq"
@@ -87,3 +83,7 @@ done</code></pre>
   sample="${file%.fastq}"
   echo "Simulated analysis of $file" > "$sample/${sample}_log.txt"
 done</code></pre>
+
+  <div class="exercise">
+    <strong>Exercise 2:</strong> Check that each folder has a <code>_log.txt</code> file inside.
+  </div>
