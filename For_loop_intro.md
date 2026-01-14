@@ -57,7 +57,7 @@ or
     <strong>Exercise 2:</strong> Check that each folder has a <code>_log.txt</code> file inside.
   </div>
 
-  <h2>Challenge: Rename .fastq to .fq</h2>
+  <h2>Part 4: Rename .fastq to .fq</h2>
   <pre><code>for file in *.fastq; do
   new="${file%.fastq}.fq"
   mv "$file" "$new"
@@ -74,15 +74,15 @@ done</code></pre>
 </body>
 </html>
 
-<h2>Going the extra mile</h2>hw>
-  <h2>Part 4: Create directories per sample</h2>
+
+  <h2>Challenge: Create directories per sample</h2>
   <pre><code>for file in *.fastq; do
   sample="${file%.fastq}"
   mkdir "$sample"
   echo "Created folder for $sample"
 done</code></pre>
 
-  <h2>Part 5: Simulate output file per sample</h2>
+  <h2>Simulate output file per sample</h2>
   <pre><code>for file in *.fastq; do
   sample="${file%.fastq}"
   echo "Simulated analysis of $file" > "$sample/${sample}_log.txt"
