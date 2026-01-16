@@ -1,7 +1,7 @@
 # Part 3: Applying UNIX commands to sequencing data
 ---
 
-In this tutorial, you'll strengthen and expand your UNIX skills, applying them to sequencing data and information on sea cucumbers. In the course data folder you'll find a directory called "untrimmed_fastq", containing files filled with reads produced from samples from sea cucumbers collected off the coast of Washington state. **Copy** these into your own student folder to work with.
+In this tutorial, you'll strengthen and expand your UNIX skills, applying them to sequencing data and information on sea cucumbers. Work through all parts of the tutorial, but you only need to submit the exercises, appropriately hash-commented. In the course data folder you'll find a directory called "untrimmed_fastq", containing files filled with reads produced from samples from sea cucumbers collected off the coast of Washington state. **Copy** these into your own student folder to work with.
 
 
 ## FASTQ files
