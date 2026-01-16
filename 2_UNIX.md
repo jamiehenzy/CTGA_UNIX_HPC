@@ -5,7 +5,7 @@ There are three distinct directories associated with your account: home, scratch
 
 `/home/jhenzy/`
 `/scratch/jhenzy/`
-`/courses/BIOL3411.202610/students/jhenzy/`
+`/courses/BIOL3411.202630/students/jhenzy/`
 
 As you can see, your student directory is part of a larger **courses** directory. This directory also includes shared data files you can access (more on this below).
 
@@ -27,7 +27,7 @@ Navigate to the course folders and use the `ls` command to explore the file stru
 
 
 #### Task 1
-Use a command to show the names of the files in the `/courses/BIOL3411.202610/data` directory. You'll need to access some of these files in this Tutorial. 
+Use a command to show the names of the files in the `/courses/BIOL3411.202630/data` directory. You'll need to access some of these files in this Tutorial. 
 **Whenever you're asked to perform an exercise with a file from any of these folders, COPY it to your own directory first.**
 
 For this tutorial you'll need to **copy** the following files into your student directory. The files are in the Arabidopsis folder, because they contain genomic data from that organism. You can copy each file individually, or try copying the Arabidopsis directory, using `cp -r <directoryname> <destination>`: 
@@ -36,6 +36,8 @@ For this tutorial you'll need to **copy** the following files into your student 
 + intron_IME_data.fasta
 + At_proteins.fasta (you should already have the At_proteins.fasta file from the previous tutorial).
 
+You'll need to unzip the files that end in .gz
+'gunzip <filename>'
 
 ## How to Become a Unix power user
 
