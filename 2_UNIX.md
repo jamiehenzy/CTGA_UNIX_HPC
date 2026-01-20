@@ -34,7 +34,8 @@ For this tutorial you'll need to **copy** the following files into your student 
 + At_genes.gff
 + chr1.fasta
 + intron_IME_data.fasta
-+ At_proteins.fasta (you should already have the At_proteins.fasta file from the previous tutorial).
++ At_proteins.fasta (you should already have the At_proteins.fasta file from the previous tutorial)
++ excel_data.csv
 
 You'll need to unzip the files that end in .gz
 'gunzip <filename>'
